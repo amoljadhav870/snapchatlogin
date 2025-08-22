@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Snapchat Login (UI Clone)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" role="form" aria-labelledby="title">
+      <div class="brand">
+        <div class="ghost" aria-hidden="true">👻</div>
+        <h1 id="title">Snapchat</h1>
+      </div>
+
+      <form id="loginForm" novalidate>
+        <label class="field">
+          <span>Username or Email</span>
+          <input type="text" name="username" placeholder="username or email" required />
+          <small class="error" data-for="username"></small>
+        </label>
+
+        <label class="field">
+          <span>Password</span>
+          <div class="password">
+            <input type="password" name="password" placeholder="password" required minlength="6" />
+            <button type="button" class="toggle" aria-label="Show password">Show</button>
+          </div>
+          <small class="error" data-for="password"></small>
+        </label>
+
+        <div class="row">
+          <label class="remember">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+          <a href="#" class="link">Forgot your password?</a>
+        </div>
+
+        <button class="btn primary" type="submit">Log In</button>
+
+        <div class="or">
+          <span>or</span>
+        </div>
+
+        <div class="social">
+          <button type="button" class="btn social-btn">Continue with Google</button>
